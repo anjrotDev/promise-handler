@@ -1,16 +1,66 @@
 {
   "name": "promis-handler",
   "version": "1.0.0",
-  "description": "A simple function to handle promises on a cleanest way with try catch",
+  "description": "A simple function to handle promises in a cleaner way without try-catch blocks",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "build": "tsc"
   },
   "author": "AnjrotDev",
   "license": "ISC",
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "semantic-release": "^24.2.0",
     "typescript": "^5.6.3"
+  },
+  "keywords": [
+    "promise",
+    "handler",
+    "async",
+    "await",
+    "error-handling",
+    "typescript",
+    "javascript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anjrotDev/promise-handler.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AnjrotDev/promise-handler/issues"
+  },
+  "homepage": "https://github.com/AnjrotDev/promise-handler#readme",
+  "release": {
+    "branches": [
+      "master",
+      "next"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "CHANGELOG.md"
+        }
+      ],
+      "@semantic-release/npm",
+      "@semantic-release/github",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "package.json",
+            "CHANGELOG.md"
+          ],
+          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }
+      ]
+    ]
   }
 }
