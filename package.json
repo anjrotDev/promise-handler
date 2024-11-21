@@ -1,5 +1,5 @@
 {
-  "name": "promise-handler",
+  "name": "promis-handler",
   "version": "1.0.0",
   "description": "A simple function to handle promises on a cleanest way with try catch",
   "main": "lib/index.js",
