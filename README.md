@@ -1,23 +1,23 @@
-# promise-handler
+# promis-handler
 
 A simple function to handle promises in a cleaner way without try-catch blocks.
 
 ## Description
 
-`promise-handler` is a lightweight utility that simplifies promise handling in JavaScript and TypeScript. It provides a consistent way to manage asynchronous operations by returning an object containing data and error, eliminating the need for multiple try-catch blocks and improving code readability.
+`promis-handler` is a lightweight utility that simplifies promise handling in JavaScript and TypeScript. It provides a consistent way to manage asynchronous operations by returning an object containing data and error, eliminating the need for multiple try-catch blocks and improving code readability.
 
 ## Installation
 
 Install the package using npm:
 
 ```bash
-$ npm install promise-handler
+$ npm install promis-handler
 ```
 
 Or with Yarn:
 
 ```bash
-$ yarn add promise-handler
+$ yarn add promis-handler
 ```
 
 ## Usage
@@ -27,13 +27,13 @@ $ yarn add promise-handler
 In TypeScript or projects supporting ES Modules:
 
 ```javascript
-import { promiseHandler } from "promise-handler";
+import { promiseHandler } from "promis-handler";
 ```
 
 In JavaScript using CommonJS:
 
 ```javascript
-const { promiseHandler } = require("promise-handler");
+const { promiseHandler } = require("promis-handler");
 ```
 
 ### Basic Example
