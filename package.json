@@ -1,0 +1,16 @@
+{
+  "name": "promise-handler",
+  "version": "1.0.0",
+  "description": "A simple function to handle promises on a cleanest way with try catch",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": ["lib"],
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "AnjrotDev",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}
