@@ -1,6 +1,6 @@
 {
   "name": "promis-handler",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A simple function to handle promises in a cleaner way without try-catch blocks",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
